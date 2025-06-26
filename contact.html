@@ -46,7 +46,7 @@
             </div>
             <div class="contact-Form-container">
                 <div id="container">
-                    <form action="#" method="post" id="contact_form">
+                    <form id="contact_form">
                         <div class="name">
                             <label for="name"></label>
                             <input type="text" placeholder="My name is" name="name" id="name_input" required>
@@ -67,6 +67,13 @@
                 </div>
             </div>
     </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+    (function () {
+        emailjs.init("lLjY7e5sKKm-3rX3M"); 
+    })();
+    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
