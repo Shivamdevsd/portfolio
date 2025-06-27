@@ -443,19 +443,56 @@
         background: #090909;
         color: #F2F3EB;
     }
-    .head-contact{
+
+    .head-contact {
         display: flex;
         width: 100%;
         align-items: center;
         gap: 10px;
     }
-    .marker-contact{
+
+    .marker-contact {
         border: 1px solid #090909;
         width: 10px;
     }
-    .image-contact-main{
+
+    .image-contact-main {
         width: 516px;
         height: 439px;
         border: 3px solid #090909;
         border-right: none;
+    }
+
+    /* Project page css */
+    .main-project-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .Project {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 24px;
+        justify-content: space-between;
+    }
+
+    .Title-project {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        justify-content: center;
+    }
+
+    .sub-title-project {
+        display: flex;
+        gap: 3px;
+    }
+
+    .project-image {
+        width: 180px;
+        height: 100px;
+        border-radius: 8px;
     }
