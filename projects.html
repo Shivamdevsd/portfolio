@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,59 +14,149 @@
     <link rel="icon" type="image/png" href="./Images/icon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
+
 <body>
-   <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid" style="padding:0% 10%;">
-      <a class="navbar-brand text-black" href="./">Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon text-white"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="./">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>  
-  <div class="main-Contact-container" style="flex-direction:column; gap:10px;">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid" style="padding:0% 10%;">
+            <a class="navbar-brand text-black" href="./">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main-Contact-container" style="flex-direction:column; gap:10px;">
         <div class="Project">
-            <div class="Title-project">
+            <div class="Project-header-card" id="header1">
+                <div class="Title-project">
+                    <h1>PetShop</h1>
+                    <div class="sub-title-project">
+                        <p>Salesforce Project</p> | <P>2025</P>
+                    </div>
+                </div>
+                <img src="./Images/Frame 2.jpg" class="project-image" alt="project one">
+            </div>
+            <div class="project-body-card" id="body1">
                 <h1>PetShop</h1>
-                <div class="sub-title-project">
-                    <p>Salesforce Project</p> | <P>2025</P>
+                <div class="Content-project">
+                    <h3>Technologies Used</h3>
+                    <div class="container-value">
+                        <div class="box-value">lightning web components</div>
+                        <div class="box-value">Apex Programming</div>
+                        <div class="box-value">Salesforce Configuration</div>
+                        <div class="box-value">API Integration</div>
+                    </div>
+                </div>
+                <div class="small-container-project">
+                    <div>
+                        <h3>HomePage</h3>
+                        <P>The Home page of PetShop is designed to create an immediate connection with users through a smart and responsive interface. At the top, a live weather widget fetches the current city weather using a free weather API. Based on the current climate, the system intelligently recommends pets that are most comfortable or active in that environment — for instance, rabbits and certain dog breeds are highlighted on cooler days. Just below this, a smooth horizontal carousel showcases a curated list of 5 top pets. Users can click on any pet to directly navigate to its detailed page. The layout is mobile-friendly and focused on creating an engaging first impression.</P>
+                    </div>
+                    <img src="./Images/image (50).png" style="width: 200px; border-radius: 10px;">
+                </div>
+                <div class="small-container-project">
+                     <img src="./Images/image (51).png" style="width: 200px; border-radius: 10px;">
+                    <div>
+                        <h3>Pets Page</h3>
+                        <P>The Pets section allows users to explore the full catalog of available pets, smartly organized into intuitive categories — Cat, Dog, Hamster, Rabbit, and Others. When a user clicks on a category, the list dynamically filters to display relevant pet cards. Each pet card includes a display image, pet name, breed, location, and an option to view more details. The cards are responsive and designed in a clean grid layout to enhance readability and browsing experience. This section ensures users can easily find the pet type they're interested in, without the need to scroll endlessly or go through unrelated records.</P>
+                    </div>
+                   
+                </div>
+                <div class="small-container-project">
+                    <div>
+                        <h3>Register Pet Page</h3>
+                        <P>The Register Pet page is built for users to easily add their own pets into the system. The form captures essential details like the pet’s name, weight, breed, current location, and owner information. A unique feature here is the ability to capture a pet's photo directly using the device camera, or upload one from the gallery. After form submission, the user receives a confirmation message along with the calculated distance between their current location and the pet’s location using the browser’s geolocation API. This gives a sense of proximity and adds a real-world layer to the system. The interface is simple yet functional, ensuring even first-time users can register pets with ease.</P>
+                    </div>
+                     <img src="./Images/image (12).jpg" style="width: 200px; border-radius: 10px;">
+                </div>
+                <div class="arrow-whole" onclick="toggleclose()">
+                    <svg width="30px" height="30px" viewBox="0 0 512 512" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>chevron-up</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="add" fill="#ffffff" transform="translate(80.853333, 157.440000)">
+                                <polygon id="Path"
+                                    points="320 205.254834 350.169889 175.084945 175.084945 5.68434189e-14 0 175.084945 30.1698893 205.254834 175.084945 60.356556">
+
+                                </polygon>
+                            </g>
+                        </g>
+                    </svg>
                 </div>
             </div>
-            <img src="./Images/Frame 2.jpg" class="project-image" alt="project one">
         </div>
         <div class="Project" style="background-color: #090909;">
-            <div class="Title-project">
-                <h1 style="color:#ebeae6;">Central Customer Portal</h1>
-                <div class="sub-title-project" style="color: #ebeae6;">
-                    <p style="color:#ebeae6;">Salesforce Project</p> | <P style="color:#ebeae6;">2024-2025</P>
+            <div class="Project-header-card" id="header2">
+                <div class="Title-project">
+                    <h1 style="color:#ebeae6;">Central Customer Portal</h1>
+                    <div class="sub-title-project" style="color: #ebeae6;">
+                        <p style="color:#ebeae6;">Salesforce Project</p> | <P style="color:#ebeae6;">2024-2025</P>
+                    </div>
+                </div>
+                <img src="./Images/Frame 1.png" class="project-image" alt="project two">
+            </div>
+             <div class="project-body-card" id="body2" style="background-color: #090909;">
+                <div class="arrow-whole" onclick="toggleclose()" style="background-color: #ebeae6;">
+                    <svg width="30px" height="30px" viewBox="0 0 512 512" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>chevron-up</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="add" fill="#090909" transform="translate(80.853333, 157.440000)">
+                                <polygon id="Path"
+                                    points="320 205.254834 350.169889 175.084945 175.084945 5.68434189e-14 0 175.084945 30.1698893 205.254834 175.084945 60.356556">
+
+                                </polygon>
+                            </g>
+                        </g>
+                    </svg>
                 </div>
             </div>
-            <img src="./Images/Frame 1.png" class="project-image" alt="project two">
         </div>
-         <div class="Project">
-            <div class="Title-project">
-                <h1>SDTravels</h1>
-                <div class="sub-title-project">
-                    <p>Web Project</p> | <P>2023</P>
+        <div class="Project">
+            <div class="Project-header-card" id="header3">
+                <div class="Title-project">
+                    <h1>SDTravels</h1>
+                    <div class="sub-title-project">
+                        <p>Web Project</p> | <P>2023</P>
+                    </div>
+                </div>
+                <img src="./Images/Frame 2.jpg" class="project-image" alt="project one">
+            </div>
+             <div class="project-body-card" id="body3">
+                <div class="arrow-whole" onclick="toggleclose()">
+                    <svg width="30px" height="30px" viewBox="0 0 512 512" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>chevron-up</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="add" fill="#ffffff" transform="translate(80.853333, 157.440000)">
+                                <polygon id="Path"
+                                    points="320 205.254834 350.169889 175.084945 175.084945 5.68434189e-14 0 175.084945 30.1698893 205.254834 175.084945 60.356556">
+
+                                </polygon>
+                            </g>
+                        </g>
+                    </svg>
                 </div>
             </div>
-            <img src="./Images/Frame 2.jpg" class="project-image" alt="project one">
         </div>
-  </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </body>
+
 </html>

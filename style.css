@@ -473,10 +473,32 @@
 
     .Project {
         display: flex;
+        flex-direction: column;
         align-items: center;
         width: 100%;
+        gap: 20px;
         padding: 24px;
+    }
+    .Project-header-card{
+        display: flex;
+        align-items: center;
+        width: 100%;
         justify-content: space-between;
+    }
+    .project-body-card{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #d6d5d2;
+        transition: max-height 0.4s ease;
+        padding: 24px;
+        gap: 20px;
+    }
+    .small-container-project{
+        display: flex;
+        width: 100%;
+        gap: 20px;
     }
 
     .Title-project {
@@ -495,4 +517,30 @@
         width: 180px;
         height: 100px;
         border-radius: 8px;
+    }
+    .arrow-whole{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: fit-content;
+        background-color: #090909;
+        padding: 12px;
+    }
+    .Content-project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+        margin-right: auto;
+    }
+    .container-value{
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    .box-value{
+        padding: 6px 12px;
+        background-color: #090909;
+        color: #fff;
     }
